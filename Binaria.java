@@ -48,9 +48,8 @@ public class Binaria {
 			}
 		} // fim do while
 	} // fim do metodo
-
+	/*Insere recursivo foi mudado, mas foi uma mudança simples, ao inves de ter Nodo novo, agora será new nodo (x,x,x)*/
 	public void insereRecursivo(Nodo aux, int valor) {
-		Nodo novo = new Nodo(valor, null, null);
 		if (aux != null) {
 			// esquerda
 			if (valor < aux.getValor()) {
@@ -58,16 +57,16 @@ public class Binaria {
 				if (aux.getEsquerda() != null) {
 					insereRecursivo(aux.getEsquerda(), valor);
 				} else
-					aux.setEsquerda(novo);
+					aux.setEsquerda(new Nodo(valor, null, null););
 			} else {
 				if (aux.getDireita() != null) {
 					insereRecursivo(aux.getDireita(), valor);
 				} else
-					aux.setDireita(novo);
+					aux.setDireita(new Nodo(valor, null, null););
 			}
 		} else {
 			// direita
-			setRaiz(novo); // this.raiz = novo;
+			setRaiz(new Nodo(valor, null, null);); // this.raiz = novo;
 			// esse set raiz auxilia em algumas linhas
 		}
 	}
@@ -162,4 +161,7 @@ public class Binaria {
 		} // while
 
 	}
+	/*Professora está fazendo o código de pesquisa*/
+
+	
 }
