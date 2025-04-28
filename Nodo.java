@@ -1,4 +1,5 @@
-package arvorebinaria;
+package arvorebinaria.EstruturaDadosAtividadeArvore;
+
 
 public class Nodo {
     //na arvore é diferente as nomenclaturas

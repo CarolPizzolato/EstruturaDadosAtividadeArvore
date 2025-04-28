@@ -1,4 +1,5 @@
-package arvorebinaria;
+package arvorebinaria.EstruturaDadosAtividadeArvore;
+
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package arvorebinaria;
+package arvorebinaria.EstruturaDadosAtividadeArvore;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -79,11 +79,13 @@ public class Binaria {
 			return;
 		}
 		if (aux != null) {
-			i++;
-			System.out.println("Valores: " + aux.getValor() + " Indice: " + i);
+			
+			
+			System.out.println("Valores: " + aux.getValor());
 			imprimeRecursiva(aux.getEsquerda());
 			imprimeRecursiva(aux.getDireita());
 		}
+		
 		// se colocar else vai dar errado pq é recursivo
 	}
 
