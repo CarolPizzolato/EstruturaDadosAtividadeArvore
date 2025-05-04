@@ -18,6 +18,24 @@ public class Binaria {
 		this.raiz = raiz;
 	}
 
+	public void pesquisa(int valor, Nodo aux) {
+		if (aux != null ) {	
+				if(aux.getValor() == valor) {
+				
+				System.out.println("valor encontrado! " + valor);
+				return;
+				}
+				else if (valor < aux.getValor() ){
+					pesquisa(valor, aux.esquerda);
+				}
+				else {
+					pesquisa(valor, aux.getDireita());
+			}
+				
+		}
+			if (aux == null)
+				System.out.println("valor nao encontrado: " + valor);
+	}
 	// inserir nodo sem recursivo
 	public void insere(int valor) {
 		Nodo novo = new Nodo(valor, null, null);
